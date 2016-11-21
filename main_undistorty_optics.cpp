@@ -1838,13 +1838,7 @@ int main(){
 
         int N; //number of points in data sets
         loadDataSetEigen(dir, K_E, misc, &N, X0_eig, Y0_eig, X_distorted0_eig, t_E0W0_eig, t_W0E0_eig, G_E0_eig, G_distorted_E0_eig);
-        //std::cout << "Here is the matrix X0_eig: " << "\n" << X0_eig.transpose() << std::endl;
-        //std::cout << "Here is the matrix Y0_eig: " << "\n" << Y0_eig.transpose() << std::endl;
-        //std::cout << "Here is the matrix G_E0_eig: " << "\n" << G_E0_eig.transpose() << std::endl;
-        //std::cout << "Here is the matrix G_distorted_E0_eig " << "\n" << G_distorted_E0_eig.transpose() << std::endl;
-        //std::cout << "Here is the vector t_E0W0_eig: " << "\n" << t_E0W0_eig << "\n" << std::endl;
-        //std::cout << "Here is the vector t_E0W0_eig: " << "\n" << t_W0E0_eig << std::endl;
-
+       
         /*
         tmp=load(file_screen);
         //use newly estimated virtual screen plane
@@ -1917,9 +1911,7 @@ int main(){
         intersectRayWithPlane(X0_eig, Y0_eig, t_SW_eig, R_SW_eig, XS_W0_eig, XS_S0_eig);
         //for X_distorted0
         intersectRayWithPlane(X_distorted0_eig, Y0_eig, t_SW_eig, R_SW_eig, XS_W_distorted0_eig, XS_S_distorted0_eig);
-        //std::cout << "XS_W_distorted0_eig: \n" << XS_W_distorted0_eig.transpose() << std::endl;
-        //std::cout << "XS_S_distorted0_eig: \n" << XS_S_distorted0_eig.transpose() << std::endl;
-
+     
 
         t_SW_z0_eig = t_SW_eig;
         t_SW_z0_eig(2) = 0;
