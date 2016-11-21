@@ -1,2 +1,2 @@
 # HMD_Undistortion
-Implementation of a method for OST-HMD undistortion model
+Implementation of a regression model for an OST-HMD undistortion problem
